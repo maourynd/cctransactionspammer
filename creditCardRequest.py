@@ -10,9 +10,11 @@ import cloudscraper
 # The credit card info used is from ayden (https://docs.adyen.com/development-resources/test-cards/test-card-numbers)
 # Thank you!
 
-url = 'https://limitedsignupdeal.com/wi-w-v2/checkout/?ajax=1&token=b8c7a1ea44b0b019c26d5f43a7e20bee'
+requestUrl = 'x'
+#testurl = 'https://limitedsignupdeal.com/wi-w-v2/checkout/?ajax=1&token=b8c7a1ea44b0b019c26d5f43a7e20bee'
 scraper = cloudscraper.create_scraper()
 
+#Example data
 data = {
     'action': 'checkout',
     'x_amount': '125.74',
@@ -39,7 +41,7 @@ data = {
 
 #def do_request():
 while True:
-    response = scraper.post(url, data=data).text
+    response = scraper.post(requestUrl, data=data).text
     print(response)
 
 
