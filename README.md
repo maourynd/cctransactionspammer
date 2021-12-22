@@ -9,4 +9,8 @@ time, so I've gone ahead and imported cloudscraper for now because I may be able
 but haven't been able to solve that problem with this module.
 
 The credit card info used is from ayden (https://docs.adyen.com/development-resources/test-cards/test-card-numbers)
+
+It's important to note that you need a valid request url (so, a submit form) and you will need the payload information 
+to use for your data struct.
+
 Thank you!
